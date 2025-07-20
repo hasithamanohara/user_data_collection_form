@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './App.css'; // Custom stylesheet
+import './App.css'; 
 
 const App = () => {
     const [cuisine, setCuisine] = useState('');
@@ -22,7 +22,7 @@ const App = () => {
         };
 
         try {
-            const response = await fetch('http://localhost:5001/register', {
+            const response = await fetch('https://user-data-collection-form-be.onrender.com/register', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData),
